@@ -239,7 +239,7 @@ strong {
 .hero {
     height: 310px;
     background-color: #e2f3fe;
-    background-image: url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif");
+    background-image: url("../img/header.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top,right
@@ -325,7 +325,9 @@ strong {
     font-size: 18px;
     padding: 13px 0;
     letter-spacing: normal;
+    line-height: normal;
     font-weight: 400;
+    text-decoration: underline;
 }
 
 .section-text--grey {
@@ -334,7 +336,7 @@ strong {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0;
-    margin-bottom: 60px
+    margin-bottom:0;
 }
 
 .footer {

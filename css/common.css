@@ -146,3 +146,6 @@ img {
     -webkit-transform: scale(1.01);
     transform: scale(1.01)
 }
+.section-text--bold{
+    font-weight: 700;
+}
