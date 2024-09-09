@@ -30,6 +30,25 @@ const embedEngine = {
             scrollFunction();
         };
 
+        const buttons = document.querySelectorAll('.btn'); // Находим все кнопки
+
+        buttons.forEach(function(btn) {
+            const hiddenContent = btn.closest('.block').querySelector('.block-content--hidden');
+            const block = btn.closest('.block');
+
+            btn.addEventListener('click', function() {
+                if (hiddenContent.style.maxHeight) {
+                    hiddenContent.style.maxHeight = null;
+                    btn.classList.remove('active');
+                    block.classList.remove('active');
+                } else {
+                    hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
+                    btn.classList.add('active');
+                    block.classList.add('active');
+                }
+            });
+        });
+
         function scrollFunction() {
             if (
                 document.body.scrollTop > 466 ||
